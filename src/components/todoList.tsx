@@ -4,6 +4,7 @@ import todoService from '../todoService'
 import { FaEdit, FaCheck} from 'react-icons/fa'
 import { GiCancel } from 'react-icons/gi'
 import { RiDeleteBin5Fill } from 'react-icons/ri'
+import TodoForm from './todoForm'
 
 const todoList = () => {
 
@@ -47,7 +48,7 @@ const todoList = () => {
     <div className='todoContainer'>
       
     <div>
-      {/* todo input from component goes here */}
+      <TodoForm  setTodos = {setTodos}/>
     </div>
     
     {todos.map((todo) => (
