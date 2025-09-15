@@ -1,8 +1,16 @@
+import TodoList from './components/todoList';
+
 function App() {
   return (
-    <>
-      
-    </>
+    <div className="App">
+      <div className="header">
+        <div className="logoside">
+          <h1>Coisas para fazer</h1>
+        </div>
+      </div>
+
+      <TodoList />
+    </div>
   )
 }
 
