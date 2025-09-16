@@ -5,6 +5,7 @@ import { FaEdit, FaCheck} from 'react-icons/fa'
 import { GiCancel } from 'react-icons/gi'
 import { RiDeleteBin5Fill } from 'react-icons/ri'
 import TodoForm from './todoForm'
+import "../Css/TodoList.css"
 
 const todoList = () => {
 
@@ -51,10 +52,12 @@ const todoList = () => {
       <TodoForm  setTodos = {setTodos}/>
     </div>
     
+    <div className="todos">
+
     {todos.map((todo) => (
-      <div className="items" key={todo.id}>
+      <div className="items" key={todo.id} onClick={() => console.log("clicou")}>
         {editingId  ==  todo.id ? (
-          <div className="editedText">
+          <div className="editText">
 
             <input type="text"  value={newTitle} onChange={(e) => setNewTitle (e.target.value)} autoFocus={true} />
             <button onClick={() => editSave(todo.id)}>
@@ -79,7 +82,7 @@ const todoList = () => {
         </button>
       </div>
     ))}
-
+    </div>
     </div>
   )
 };

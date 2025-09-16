@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import type { Dispatch, SetStateAction } from "react"
 import todoService from '../todoService'
 import type { todoTypes } from '../todo'
+import "../Css/TodoForm.css"
 
 
 interface  propTypes {
@@ -21,13 +22,13 @@ const todoForm: React.FC<propTypes> = ({ setTodos }) => {
     };
 
     return (
-        <div>
+        <div className='inputForm'>
             <input
                 type="text"
                 value={newTitle}
                 onChange={(e) => setNewTitle(e.target.value)}
                 autoFocus={true}
-                placeholder="Adicionar Tarefa"
+                placeholder="Tarefa"
             />
             <button onClick={addTodo}>Adicionar Tarefa</button>
         </div>
