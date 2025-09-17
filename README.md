@@ -5,7 +5,7 @@
 ![Vite](https://img.shields.io/badge/Vite-4.0-purple?logo=vite)
 ![Status](https://img.shields.io/badge/Status-Aprendizado-green)
 
-![Todo List Screenshot](./src/showcase/home.png)
+![Todo List Screenshot](./showcase/home.png)
 
 ---
 
